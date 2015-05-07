@@ -25,7 +25,7 @@ body{
 
 	.section2{
 		border: solid black 1px;
-		margin-top: 3%;
+		margin-top: 5%;
 		width: 100%;
 		height: 800px;
 
@@ -44,5 +44,35 @@ body{
 			}
 			
 		}
+
+		div.section2Bottom{
+			width: 95%;
+			margin:0% auto;
+			margin-top: 5%;
+
+			div.section2BottomDetail{
+				height: 450px;
+			}
+
+			div.section2BottomDetailPrincipal{
+				background-color:#66CCFF;
+			}
+
+			div.section2BottomDetailSecondary{
+			
+			}
+		}
 	}
+
+	div.section3{
+
+		video {
+			min-width: 100%; 
+			min-height: 100%;
+			width: auto; 
+			height: auto; 
+		}
+	}
+	
+
 }

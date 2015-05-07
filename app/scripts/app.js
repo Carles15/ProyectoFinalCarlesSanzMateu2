@@ -9,16 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('proyectofinal2App', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
+  .module('proyectofinal2App', ['ngAnimate','ngAria','ngCookies','ngMessages','ngResource','ngRoute','ngSanitize','ngTouch','ngMaterial'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

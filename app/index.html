@@ -13,6 +13,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <!-- endbuild -->
   </head>
   <body ng-app="proyectofinal2App">
@@ -21,30 +22,56 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <core-header-panel>
 
-      <core-toolbar>
-        <paper-icon-button icon="menu">
+    <core-toolbar>
+      <paper-icon-button icon="menu">
+      </paper-icon-button>
+      <div flex>
+        Hola Mundo!
+      </div>
+      <paper-menu-button>
+        <paper-icon-button icon="more-vert">
         </paper-icon-button>
-        <div flex>
-          Hola Mundo!
-        </div>
-        <paper-menu-button>
-          <paper-icon-button icon="more-vert">
-          </paper-icon-button>
-          <paper-dropdown class="dropdown" halign="right">
-            <core-menu>
-              <paper-item>Menu</paper-item>
-              <paper-item>Perfil</paper-item>
-              <paper-item>Apartado</paper-item>
-              <paper-item>Sección</paper-item>
-              <paper-item>Salir</paper-item>
-            </core-menu>
-          </paper-dropdown>
-          </paper-menu-button>
-      </core-toolbar>
+        <paper-dropdown class="dropdown" halign="right">
+          <core-menu>
+            <paper-item>Menu</paper-item>
+            <paper-item>Perfil</paper-item>
+            <paper-item>Apartado</paper-item>
+            <paper-item>Sección</paper-item>
+            <paper-item>Salir</paper-item>
+          </core-menu>
+        </paper-dropdown>
+        </paper-menu-button>
+    </core-toolbar>
 
-    </core-header-panel>
+
+    <md-whiteframe class="md-whiteframe-z3 welcomeBannerContainer" layout layout-align="center center">
+      <md-whiteframe class="md-whiteframe-z5 welcomeBannerInsideContainer" layout layout-align="center center">
+        <span>.md-whiteframe-z2</span>
+      </md-whiteframe>
+    </md-whiteframe>
+
+    <div class="section2">
+
+      <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="20px" md-gutter-gt-sm="8px" class="section2Top">
+        
+        <md-grid-tile class="section2TopLeft" md-rowspan="1" md-colspan="3" md-colspan-sm="1">
+          <md-grid-tile-footer>
+            <h3>#1: (3r x 2c)</h3>
+          </md-grid-tile-footer>
+        </md-grid-tile>
+
+        <md-grid-tile class="section2TopRight" md-rowspan="1" md-colspan="3" md-colspan-sm="1">
+          <md-grid-tile-footer>
+            <h3>#2: (1r x 1c)</h3>
+          </md-grid-tile-footer>
+        </md-grid-tile>
+
+      </md-grid-list>
+
+      
+
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -69,6 +96,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
     <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="bower_components/paper-menu-button/paper-menu-button.html">
